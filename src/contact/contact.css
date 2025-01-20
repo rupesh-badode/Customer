@@ -1,0 +1,94 @@
+.contact-form-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+.con{
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+}
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #474242;
+  text-align: bold;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #97989e;
+  border-radius: 5px;
+  width: 300px;
+}
+
+
+.message-group {
+  width: 100%;
+}
+
+.agreement-group {
+  gap: 10px;
+  font-size: 12px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+@media screen and (max-width: 768px) {
+
+  .con{
+    padding: 20px;
+    gap: 50px;
+  display: grid;
+}
+.contact-form {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+}

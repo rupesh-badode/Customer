@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.services {
+  padding: 50px 20px;
+  background-color: #1a976a;
+  z-index: 10;
+  position:relative;
+  
+}
+
+.services-container {
+  
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: -100px;
+}
+
+.services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services .highlight {
+  color: #28a745; /* Green highlight */
+}
+
+.services p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Accordion Styles */
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.accordion-title:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-content {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.accordion-item.active .accordion-title {
+  color: #28a745;
+}
+@media screen and (max-width: 768px) {
+
+  .services-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: -100px;
+  }
+
+}

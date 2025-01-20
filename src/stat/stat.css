@@ -1,0 +1,49 @@
+/* Statistics Section */
+.statistics {
+  padding: 40px 20px;
+  background-color: #fff;
+  color: #000;
+  z-index: 9;
+  position:relative;
+}
+
+.statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 170px;
+}
+
+.stat-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 150px;
+  font-weight: bold;
+  color: #00a859; /* Green color for numbers */
+  margin-bottom: 10px;
+}
+
+.stat-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .statistics-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,130 @@
+/* Slider Container */
+.testimonial-slider {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  z-index: 9;
+  position:relative;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonial-card {
+  background-color: #fbe4c2; /* Light beige background */
+  padding: 20px 30px;
+  border-radius: 50px 0px 50px 0px;
+  height: 300px;
+  width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+}
+
+.rating {
+  color: #00a859; /* Green for stars */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.source {
+  font-size: 0.9rem;
+  color: #00a859;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.source:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background-color: #00a859;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+
+.nav-btn:hover {
+  background-color: #00773c;
+}
+
+/* Pagination Dots */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #00a859;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    padding: 15px 20px;
+    height: 450px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+
+  .author {
+    font-size: 0.9rem;
+  }
+
+  .nav-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}

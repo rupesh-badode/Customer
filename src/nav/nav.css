@@ -1,0 +1,144 @@
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  background: url('https://cdn.prod.website-files.com/609fcf792d95d5535b5cf0ad/63c95d5486bf2d37b761ee47_cover%203.webp') no-repeat center center/cover; /* Replace with your background image */
+  display: flex;
+  background-size: cover;
+  background-attachment:fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+.hero-content {
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+  margin-right: 420px;
+  height: 100%;
+  margin-top: 100px;
+  text-align: left;
+  margin-top: -80px;
+ 
+}
+.hero-overlay{
+  position:fixed;
+  z-index:1;
+}
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 1000px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #ffc107; /* Yellow text */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+ 
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #000;
+}
+.par{
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+
+  .hero-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 1000px;
+  }
+  .hero-content {
+  
+    color: #fff;
+    padding: 30px;
+    height: 100%;
+    margin-left: 800px;
+    margin-top: 50px;
+   
+  }
+  .hero-content h2 {
+    font-size: 25px;
+    color: #ffc107; /* Yellow text */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .par{
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .btn-primary {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 150px;
+    transition: background-color 0.3s ease;
+  }
+  .btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+  }
+}

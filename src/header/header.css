@@ -1,0 +1,53 @@
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+/*  Logo section   */
+.navbar-brand img{
+  width:8rem;
+}
+header{
+  background-color:rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index:1000;
+}
+#header-component{
+  align-items: center;
+}
+.header-right-panel{
+  align-items:center;
+  font-size:medium;
+}
+.navbar{
+  justify-content:space-between;
+}
+.nav{
+  display: flex;
+  font-size: small;
+  gap: 15px;
+  margin-left:100px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.res-btn{
+  display:none;
+}
+
+
+#main-heading{
+  font-size: 70px;
+  font-weight:bold;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}

@@ -1,0 +1,42 @@
+/* Marquee Container */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #acacac;
+  z-index: 9;
+  position:relative;
+}
+
+/* Marquee Content */
+.marquee {
+  display: flex;
+  animation: scroll 15s linear infinite; /* Smooth scrolling effect */
+}
+
+/* Individual Items */
+.marquee-item {
+  flex-shrink: 0;
+  width: 200px;
+  margin: 0px;
+  height: auto;
+  object-fit:contain;
+  border: 1px solid rgb(199, 198, 198);
+  padding: 10px;
+}
+
+/* Scrolling Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .marquee-item {
+    width: 100px;
+  }
+}
